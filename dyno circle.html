@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            height: 500px;
+            transform: translate(-40%, -45%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rectangle{
+            position: relative;
+            vertical-align: middle;
+            background-color: black;
+            width: 400px;
+            height: 100px;
+            z-index: 10;
+            border-radius: 10px;
+            border: black 2px solid;
+            overflow: hidden;
+        }
+
+        
+        .circle4{
+            width: 320px;
+            height: 320px;
+            border: black 2px solid;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            
+        }
+        .circle5{
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            border: black 2px solid;
+            background-color: orange;
+            border-radius: 50%;
+            left: 40px;
+            top: 40px;
+        }
+        .circle6{
+            position:absolute ;
+            width: 160px;
+            height: 160px;
+            border: black 2px solid;
+            background-color: black;
+            border-radius: 50%;
+            left: 80px;
+            top: 80px;
+        }
+
+        .demo{
+            position: absolute;
+            top: -112%;
+            left: 10%;
+        }
+        
+        .triangle1:after {
+            position:absolute;
+            content:"";
+            margin-top:5px;
+            margin-left:2px;
+            left: 129px;
+            top: 124px;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 46px solid rgb(9, 9, 9);
+        }
+        
+        .triangle1:before {
+            position:absolute;
+            content:"";
+            left: 121px;
+            top: 115px;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 67px solid rgb(204, 115, 6);
+        }
+        .triangle2:after {
+            position:absolute;
+            content:"";
+            margin-top:5px;
+            margin-left:2px;
+            left: 129px;
+            top: 139px;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 46px solid rgb(9, 9, 9);
+            rotate: 180deg;
+        }
+        
+        .triangle2:before {
+            
+        position:absolute;
+        content:"";
+        left: 121px;
+        top: 137px;
+        rotate: 180deg;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 67px solid rgb(204, 115, 6);
+    }
+    
+    .circle  {
+        position :absolute;
+        top: 90px;
+        left: 40px;
+    }
+    .circle1{
+        width: 320px;
+        height: 320px;
+        border: black 2px solid;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        
+    }
+    .circle2{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border: black 2px solid;
+        background-color: yellow;
+        border-radius: 50%;
+        left: 40px;
+        top: 40px;
+    }
+    .circle3{
+        position:absolute ;
+        width: 160px;
+        height: 160px;
+        border: black 2px solid;
+        background-color: green;
+        border-radius: 50%;
+        left: 80px;
+        top: 80px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rectangle"> 
+            <div class="demo">
+                <div class="circle4 "></div>
+                <div class="circle5 "></div>
+                <div class="circle6 "></div>
+                <div class="triangle1"></div>
+            <div class="triangle2"></div>
+            </div>
+        </div>
+        <div class=" circle">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>           
+        </div>
+    </div>
+</body>
+</html>
